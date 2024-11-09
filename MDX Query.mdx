@@ -1,0 +1,106 @@
+﻿//1.Tổng số lượng đơn hàng theo năm
+SELECT NON EMPTY
+    [DIM Time].[Year].Members ON ROWS,
+    [Measures].[FACT Sale Count] ON COLUMNS
+FROM [SaleCube];
+
+// 2. Tổng số lượng đơn theo tháng
+SELECT NON EMPTY
+    [DIM Time].[Month].Members ON ROWS,
+    [Measures].[FACT Sale Count] ON COLUMNS
+FROM [SaleCube];
+
+// 3.Tổng số lượng đơn hàng theo tháng và năm
+SELECT NON EMPTY
+    [DIM Time].[Year].Members * [DIM Time].[Month].Members ON ROWS,
+    [Measures].[FACT Sale Count] ON COLUMNS
+FROM [SaleCube];
+
+// 4.Tổng doanh thu theo năm
+SELECT NON EMPTY
+    [DIM Time].[Year].Members ON ROWS,
+    [DIM Order].[Total Amount] ON COLUMNS
+FROM [SaleCube];
+
+// 5. Tổng phí vận chuyển theo năm
+SELECT NON EMPTY
+    [DIM Time].[Year].Members ON ROWS,
+    [Measures].[Shipment Count] ON COLUMNS
+FROM [SaleCube];  
+
+// 6. Tổng số lượng sản phẩm bán ra theo sản phẩm và năm
+SELECT NON EMPTY
+    [DIM Time].[Year].Members ON COLUMNS,
+    [DIM Product].[Product Display Name].Members ON ROWS
+FROM [SaleCube]
+WHERE [DIM Order].[Total Amount];  
+
+// 7. Tổng số lượng đơn hàng theo từng loại sản phẩm
+SELECT NON EMPTY
+    [DIM Product].[Article Type].Members ON ROWS, 
+    [Measures].[FACT Sale Count] ON COLUMNS 
+FROM [SaleCube]; 
+
+// 8. Số lượng khách hàng duy nhất theo giới tính
+SELECT 
+    [DIM Customer].[Gender].MEMBERS ON ROWS,
+    {[Measures].[Distinct Customers]} ON COLUMNS
+FROM [SaleCube];
+
+
+//FACT BEHAVIOR
+
+// 9. Đếm số phiên theo sự kiện
+SELECT NON EMPTY
+    [DIM Event].[Event Name].MEMBERS ON ROWS,
+    [Measures].[FACT Behavior Count] ON COLUMNS
+FROM [BehaviorCube];
+
+// 10. Đếm số phiên theo nguồn truy cập
+SELECT NON EMPTY
+    [DIM Platform].[Traffic Source].MEMBERS ON ROWS,
+    [Measures].[FACT Behavior Count] ON COLUMNS
+FROM [BehaviorCube];
+
+// 11. Số phiên theo sự kiện và nguồn truy cập
+SELECT NON EMPTY
+    [DIM Event].[Event Name].MEMBERS ON ROWS,
+    [DIM Platform].[Traffic Source].MEMBERS ON COLUMNS
+FROM [BehaviorCube];
+
+// 12.Số phiên theo sự kiện và nền tảng
+SELECT NON EMPTY
+    CROSSJOIN([DIM Event].[Event Name].MEMBERS, [DIM Platform].[Traffic Source].MEMBERS) ON ROWS,
+    [Measures].[FACT Behavior Count] ON COLUMNS
+FROM [BehaviorCube];
+
+// 13.Top 5 sự kiện có số phiên cao nhất
+SELECT
+    TOPCOUNT([DIM Event].[Event Name].MEMBERS, 5, [Measures].[FACT Behavior Count]) ON ROWS,
+    [Measures].[FACT Behavior Count] ON COLUMNS
+FROM [BehaviorCube];
+
+
+// 14.Tỷ lệ đặt chỗ theo từng nguồn truy cập
+WITH MEMBER [Measures].[Booking Rate by Source] AS
+    IIF(
+        [Measures].[FACT Behavior Count] = 0,
+        NULL,
+        [Measures].[Booking Count] / [Measures].[FACT Behavior Count]
+    ),
+    FORMAT_STRING = "Percent"
+SELECT
+    [DIM Platform].[Traffic Source].MEMBERS ON ROWS,
+    [Measures].[Booking Rate by Source] ON COLUMNS
+FROM [BehaviorCube];
+
+// 15. Tổng số đặt chỗ theo từng nguồn truy cập và sự kiện
+SELECT NON EMPTY
+    [DIM Platform].[Traffic Source].MEMBERS ON ROWS,
+    [DIM Event].[Event Name].MEMBERS ON COLUMNS
+FROM [BehaviorCube]
+WHERE ([Measures].[Booking Count]);
+
+
+
+
