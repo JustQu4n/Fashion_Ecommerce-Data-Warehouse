@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Sale_Ecommerce SSRS", "Sale_Ecommerce SSRS\Sale_Ecommerce SSRS.rptproj", "{E974A67E-19F4-40F6-866C-3386D82A3122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.Debug|Default.ActiveCfg = Debug
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.Debug|Default.Build.0 = Debug
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.Debug|Default.Deploy.0 = Debug
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.DebugLocal|Default.Build.0 = DebugLocal
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.Release|Default.ActiveCfg = Release
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.Release|Default.Build.0 = Release
+		{E974A67E-19F4-40F6-866C-3386D82A3122}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F743D0F4-B119-4336-B40F-45B7D13160AF}
+	EndGlobalSection
+EndGlobal

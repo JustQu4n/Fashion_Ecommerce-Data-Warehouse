@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0a800ba9-5de7-4810-8714-ce7fd2f85776" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cube_Sale</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT Sale</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5333c758-a0c4-4918-a5d9-b1b12eba263f">
+          <ID>FACT Sale</ID>
+          <Name>FACT Sale</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="03dd0ed7-bdbd-4d2d-b5bb-5de46eea8f5c">
+            <DataSourceViewID>SSIS Fashion DW</DataSourceViewID>
+            <TableID>dbo_FACT_Sale</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Order</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="64a1f53c-3652-4a68-9803-abc9fccfebb6">
+          <ID>DIM Order</ID>
+          <Name>DIM Order</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6278978d-0e4a-4a17-9193-df5168f3687d">
+            <DataSourceViewID>SSIS Fashion DW</DataSourceViewID>
+            <TableID>dbo_DIM_Order</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Customer</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4a2d76f6-961e-43ad-8d9e-dbad6ef1f78b">
+          <ID>DIM Customer</ID>
+          <Name>DIM Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="42b92dac-fe46-456d-924a-da382e9ae69e">
+            <DataSourceViewID>SSIS Fashion DW</DataSourceViewID>
+            <TableID>dbo_DIM_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Customer 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ddb37db3-224f-42cb-ab57-64268b470838">
+          <ID>DIM Customer</ID>
+          <Name>DIM Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5c0bed8d-df45-48fb-a6bb-0e7895446f33">
+            <DataSourceViewID>SSIS Fashion DW</DataSourceViewID>
+            <TableID>dbo_DIM_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Payment</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7730b341-1700-497b-91e2-aed8939d0c77">
+          <ID>DIM Payment</ID>
+          <Name>DIM Payment</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="15be7a92-b127-4899-9b33-4d9fc1a3ec1e">
+            <DataSourceViewID>SSIS Fashion DW</DataSourceViewID>
+            <TableID>dbo_DIM_Payment</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

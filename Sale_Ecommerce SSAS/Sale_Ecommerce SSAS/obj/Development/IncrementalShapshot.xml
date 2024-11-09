@@ -1,0 +1,124 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Sale_Ecommerce SSAS</Database>
+    <Server>ADMIN-PC</Server>
+    <ConnectionString>Data Source=ADMIN-PC;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>LcUuloJ/462BFZpfxlM809VGx0Y=11/5/2024 4:28:41 PM11/5/2024 4:28:41 PM</TimeStamp>
+        <ID>
+          <String>SSIS Fashion DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>VjTKfmwnf6u/jQQ8WzibHwc2OKE=11/5/2024 4:28:53 PM11/5/2024 4:28:53 PM</TimeStamp>
+        <ID>
+          <String>SSIS Fashion DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PhWK+8XEAPGfK9X98z8wR/oaOWw=11/5/2024 4:29:20 PM11/5/2024 4:29:20 PM</TimeStamp>
+        <ID>
+          <String>DIM Payment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jquK2GGXo68Hce8npFzsuteK+Dg=11/5/2024 4:29:32 PM11/5/2024 4:29:32 PM</TimeStamp>
+        <ID>
+          <String>DIM Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OjbWKsVf8K9SHg5lfaoOkW7kIt0=11/5/2024 4:29:46 PM11/5/2024 4:29:46 PM</TimeStamp>
+        <ID>
+          <String>DIM Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lWkqazGEmwcJgxctlI3XOQ7X/Ts=11/5/2024 4:30:12 PM11/5/2024 4:30:12 PM</TimeStamp>
+        <ID>
+          <String>DIM Shipment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/TMAGgBLVNZV01oIIWr9uAPB9YI=11/5/2024 4:30:26 PM11/5/2024 4:30:26 PM</TimeStamp>
+        <ID>
+          <String>DIM Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OV/ReH8kix06M3ki5Bq3bQ3lO+8=11/5/2024 4:30:38 PM11/5/2024 4:30:38 PM</TimeStamp>
+        <ID>
+          <String>DIM Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7DrTvpa376jC0Q5G80sXs9jjwcI=11/5/2024 4:30:48 PM11/5/2024 4:30:48 PM</TimeStamp>
+        <ID>
+          <String>DIM Event</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>v8z6iC1rQrgFJddhKntlryF3C1o=11/5/2024 4:30:59 PM11/5/2024 4:30:59 PM</TimeStamp>
+        <ID>
+          <String>DIM Platform</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>I3zomSHLVggX/ztem+PiL/zWigE=11/5/2024 4:29:09 PM11/5/2024 4:29:09 PM</TimeStamp>
+        <ID>
+          <String>DIM Order</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>dmeHzN7g4/OrS7F9sqa41CcsiAM=11/5/2024 8:25:37 PM11/5/2024 4:32:38 PMAZRBwa75fyFxA6syOvHrPPVL6b8=11/5/2024 8:25:37 PM11/5/2024 4:32:38 PM</TimeStamp>
+        <ID>
+          <String>Cube_Sale</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>LX98n3WW/hLU0woin258i1+1OG8=11/5/2024 7:48:21 PM11/5/2024 4:38:45 PMcFnePFisG24w9iYqqsIbZN830m4=11/5/2024 5:28:21 PM11/5/2024 4:38:45 PM</TimeStamp>
+        <ID>
+          <String>Cube_Behavior</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>kXOn+XuJGrU+5fizpL3afH7dB8s=11/3/2024 9:44:56 PM11/3/2024 9:44:56 PM</TimeStamp>
+      <ID>
+        <String>Sale_Ecommerce SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-11-05T13:25:48.296667Z</LastDeployed>
+</DeploymentSnapshot>

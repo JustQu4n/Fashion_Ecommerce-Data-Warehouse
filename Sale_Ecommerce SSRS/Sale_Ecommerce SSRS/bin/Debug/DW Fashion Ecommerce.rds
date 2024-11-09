@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DW Fashion Ecommerce">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=ADMIN-PC;Initial Catalog=DW_Fashion_Final;TrustServerCertificate=True</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>696dfdc9-aff0-44e2-8093-f24adff2f32b</DataSourceID>
+</RptDataSource>

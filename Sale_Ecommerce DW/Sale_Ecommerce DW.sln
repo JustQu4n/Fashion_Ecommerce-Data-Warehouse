@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Sale_Ecommerce DW", "Sale_Ecommerce DW\Sale_Ecommerce DW.dtproj", "{F54F41CA-4E75-40DC-B3A5-0DBAC9D6E13F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F54F41CA-4E75-40DC-B3A5-0DBAC9D6E13F}.Development|Default.ActiveCfg = Development
+		{F54F41CA-4E75-40DC-B3A5-0DBAC9D6E13F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BCBBDC1-C879-43FD-8C18-AD8B93E24CCA}
+	EndGlobalSection
+EndGlobal

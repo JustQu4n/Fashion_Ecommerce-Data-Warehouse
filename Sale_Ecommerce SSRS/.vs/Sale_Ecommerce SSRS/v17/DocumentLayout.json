@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E974A67E-19F4-40F6-866C-3386D82A3122}|Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS.rptproj|C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS\\Report_2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{E974A67E-19F4-40F6-866C-3386D82A3122}|Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS.rptproj|solutionrelative:Sale_Ecommerce SSRS\\Report_2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974A67E-19F4-40F6-866C-3386D82A3122}|Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS.rptproj|C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS\\Report_1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{E974A67E-19F4-40F6-866C-3386D82A3122}|Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS.rptproj|solutionrelative:Sale_Ecommerce SSRS\\Report_1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Report_1.rdl [Design]",
+              "DocumentMoniker": "C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS\\Report_1.rdl",
+              "RelativeDocumentMoniker": "Sale_Ecommerce SSRS\\Report_1.rdl",
+              "ToolTip": "C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS\\Report_1.rdl [Design]",
+              "RelativeToolTip": "Sale_Ecommerce SSRS\\Report_1.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-06T14:36:17.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Report_2.rdl [Design]",
+              "DocumentMoniker": "C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS\\Report_2.rdl",
+              "RelativeDocumentMoniker": "Sale_Ecommerce SSRS\\Report_2.rdl",
+              "ToolTip": "C:\\Users\\CASSANOQUAN\\source\\repos\\Sale_Ecommerce SSRS\\Sale_Ecommerce SSRS\\Report_2.rdl [Design]",
+              "RelativeToolTip": "Sale_Ecommerce SSRS\\Report_2.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-06T08:56:32.665Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

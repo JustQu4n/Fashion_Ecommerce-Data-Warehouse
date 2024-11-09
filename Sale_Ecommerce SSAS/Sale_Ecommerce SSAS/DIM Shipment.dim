@@ -1,0 +1,163 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="092ca14e-a44d-48a5-b6ba-519069bbfd4f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM Shipment</ID>
+  <Name>DIM Shipment</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="11610f3f-af2e-41a6-8bc8-7ccc72eaa93f">
+    <DataSourceViewID>SSIS Fashion DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="0de02b52-d9b3-434e-bc59-2a30f97b545d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0cc6c9bd-53b2-43af-ae19-4ba526f018fc">
+      <ID>Shipment ID</ID>
+      <Name>Shipment ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="637f0f4d-e1a5-46bb-80b8-e3d45389c438">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="103db575-47eb-4789-a2bb-32ea30dca870">
+            <TableID>dbo_DIM_Shipment</TableID>
+            <ColumnID>shipmentID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c43b0e67-227f-46ed-8d87-6d79f8a1a15c">
+          <AttributeID>Shipment Fee</AttributeID>
+          <Name>Shipment Fee</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fa8f8f71-7bc1-447b-b34e-003cfd2924e5">
+          <AttributeID>Shipment Date Limit</AttributeID>
+          <Name>Shipment Date Limit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="942cb1fb-f28f-46a2-bce6-48095a1eb0fd">
+          <AttributeID>Shipment Location Lat</AttributeID>
+          <Name>Shipment Location Lat</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f503b129-28c6-4061-ab33-5db09b2d40e3">
+          <AttributeID>Shipment Location Long</AttributeID>
+          <Name>Shipment Location Long</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0840ff06-4856-4fd6-89d6-ff5fbd75592a">
+      <ID>Shipment Fee</ID>
+      <Name>Shipment Fee</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e2fa2323-a00a-45a4-9472-c4870ac461e3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e229a481-afcb-4b5e-9de4-b7867e260b7b">
+            <TableID>dbo_DIM_Shipment</TableID>
+            <ColumnID>shipment_fee</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef7fa2a5-b438-4fea-88aa-ca96119f8509">
+      <ID>Shipment Date Limit</ID>
+      <Name>Shipment Date Limit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7c1fbbf2-0241-401f-a7c2-5d7884111c27">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cd42bce-a768-4902-a9ff-6b7f0c45195e">
+            <TableID>dbo_DIM_Shipment</TableID>
+            <ColumnID>shipment_date_limit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4c41bdf7-03df-4e1f-907d-337454cf7993">
+      <ID>Shipment Location Lat</ID>
+      <Name>Shipment Location Lat</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e252d037-cf1c-4fc2-91d5-b0d1799b663b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ea0ccf0-3551-4e7d-86ee-854c0cdbebde">
+            <TableID>dbo_DIM_Shipment</TableID>
+            <ColumnID>shipment_location_lat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b641cf1-3283-4c8f-8c23-be5e4a1a2508">
+      <ID>Shipment Location Long</ID>
+      <Name>Shipment Location Long</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="793fa6dd-a8f5-4f64-88dc-9a458483a359">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7f7ea8-6bc7-4e86-9177-647abe7daad1">
+            <TableID>dbo_DIM_Shipment</TableID>
+            <ColumnID>shipment_location_long</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
